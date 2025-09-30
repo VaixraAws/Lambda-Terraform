@@ -18,7 +18,7 @@ locals {
 # Autoscaling group - default
 ################################################################################
 
-resource "aws_autoscaling_group" "VairaMuthu_Lambda" {
+resource "aws_autoscaling_group" "VairaMuthu_Autoscalling" {
   count = local.create && !var.ignore_desired_capacity_changes ? 1 : 0
 
   region = var.region
