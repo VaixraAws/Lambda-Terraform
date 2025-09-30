@@ -18,7 +18,7 @@ locals {
 # Autoscaling group - default
 ################################################################################
 
-resource "aws_autoscaling_group" "as" {
+resource "aws_autoscaling_group" "AUTO_saclling" {
   count = local.create && !var.ignore_desired_capacity_changes ? 1 : 0
 
   region = var.region
